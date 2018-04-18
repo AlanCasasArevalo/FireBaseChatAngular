@@ -34,7 +34,9 @@ export class ChatService {
   login( provider: string ) {
     this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }
+  
   logout() {
+    this.user = {};
     this.afAuth.auth.signOut();
   }
 
