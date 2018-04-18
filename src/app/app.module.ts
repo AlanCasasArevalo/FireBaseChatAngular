@@ -5,6 +5,10 @@ import { FormsModule } from '@angular/forms';
 // Components
 import { AppComponent } from './app.component';
 import { ChatComponent } from './components/chat/chat.component';
+import { LoginComponent } from './components/login/login.component';
+
+// Services
+import { ChatService } from './services/chat.service';
 
 // Library (see attached: https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md)
 import { AngularFireModule } from 'angularfire2';
@@ -14,8 +18,6 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 // Configuration
 import { environment } from '../environments/environment';
-import { ChatService } from './services/chat.service';
-import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
